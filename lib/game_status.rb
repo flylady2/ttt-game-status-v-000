@@ -26,6 +26,7 @@ def won?(board)
     # position_3 = board[win_index_3]
     # board.detect{position_1 == "X" && position_2 == "X" and position_3 == "X"}
     if board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && (board[combo[0]] == 'X' || board[combo[0]] == 'O') do
+binding.pry
       return true
     end
   end
