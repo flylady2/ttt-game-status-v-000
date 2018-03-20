@@ -34,7 +34,7 @@ end
 
 def full?(board)
   board.each do |i|
-    if i == " " || or i == ""
+    if i == " " || i == ""
       return false
     else
       return true
