@@ -57,7 +57,7 @@ end
 
 def winner(board)
   if won?(board) != false
-    won?(board)
+    puts board[combo[0]]
   else
     nil
   end
