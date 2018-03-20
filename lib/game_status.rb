@@ -18,12 +18,13 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    win_index_1 = combo[0]
-    win_index_2 = combo[1]
-    win_index_3 = combo[2]
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
-    board.detect{position_1 == "X" && position_2 == "X" and position_3 == "X"}
+    # win_index_1 = combo[0]
+    # win_index_2 = combo[1]
+    # win_index_3 = combo[2]
+    # position_1 = board[win_index_1]
+    # position_2 = board[win_index_2]
+    # position_3 = board[win_index_3]
+    # board.detect{position_1 == "X" && position_2 == "X" and position_3 == "X"}
+    board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && (board[combo[0]] == 'X' || board[combo[0]] == 'O') ? true : false
   end
 end
