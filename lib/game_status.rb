@@ -1,8 +1,4 @@
 require 'pry'
-# Helper Method
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
 
 WIN_COMBINATIONS = [
   [0, 1, 2], # top row  index =  0
@@ -14,7 +10,10 @@ WIN_COMBINATIONS = [
   [0, 4, 8], # Ltop Rbottom diagonals
   [6, 4, 2] # Rtop Lbottom diagonal
 ]
-
+# Helper Method
+def position_taken?(board, index)
+  !(board[index].nil? || board[index] == " ")
+end
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
