@@ -28,8 +28,8 @@ def won?(board)
       #binding.pry
       return combo
     end
-    false
   end
+  false
 end
 
 def full?(board)
